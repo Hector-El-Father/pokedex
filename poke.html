@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./css.css">
+  </head>
+  <body>
+
+    <div class="container">
+        <div class="row">
+            <h1>Pokedex</h1>
+        </div>
+        <div class="row">
+            <div class="container m-auto">
+                <div class=" m-auto" style="width: 145px; height:50px">
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination">
+                          <li id="previus" class="page-item"><a class="page-link" href="#">Previous</a></li>
+                          <li id="next" class="page-item"><a class="page-link" href="#">Next</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="row mx-2" id="cards">
+                
+            </div>
+        </div>
+        <template id="template-card">
+            <div class="col-12 mb-1 col-md-3">
+                <div class="card" id="cuerpoCard">
+                    <div class="container text-center">
+                        <img src="" alt="" class="card-img-top img-fluid">
+
+                    </div>
+                    <div class="card-body">
+                        <p class="numero de pokemon">Numero de pokemon</p>
+                        <h4 class="nombreDelPokemon"> Nombre de Pokemon</h4>
+                        <button type="button" class="categoria btn btn-success" disabled>Tipo</button>
+                        <!-- <button type="button" class="categoria btn btn-outline-secondary">subtipo</button> -->
+                        <div class="col m-0 p-0">
+                            <h5>vida</h5>
+                            <div class="progress">
+                                <div class="hp progress-bar bg-success" role="progressbar" aria-label="Basic example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h5>ataque</h5>
+                            <div class="progress">
+                                <div class="atack progress-bar bg-danger" role="progressbar" aria-label="Basic example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h5>Defensa</h5>
+                            <div class="progress">
+                                <div class="defense progress-bar bg-warning" role="progressbar" aria-label="Basic example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h5>ataque especial</h5>
+                            <div class="progress">
+                                <div class="special-attack progress-bar bg-danger" role="progressbar" aria-label="Basic example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h5>Defensa especial</h5>
+                            <div class="progress">
+                                <div class="special-defense progress-bar bg-warning" role="progressbar" aria-label="Basic example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+
+                            <h5>Velocidad</h5>
+                            <div class="progress">
+                                <div class="speed progress-bar bg-info" role="progressbar" aria-label="Basic example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </template>
+    </div>
+
+    <script src="./index3.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  </body>
+</html>
